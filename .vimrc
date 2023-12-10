@@ -125,3 +125,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 Plugin 'vim-scripts/indentpython.vim'
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" 启用 JSON 插件
+au BufRead,BufNewFile *.json set filetype=json
+" JSON 缩进配置
+autocmd FileType json setlocal ts=2 sts=2 sw=2 expandtab
+
